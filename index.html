@@ -551,10 +551,14 @@
         </div>
         <div class="bottom-forma-container">
           <p class="bottom-social-link-text forma-text">Subscribe</p>
-          <forma class="bottom-forma">
-            <input type="email" name="footer-email"
-            class="footer-input" placeholder="E-mail"/>
-            <label for="footer-email"></label>
+          <form class="bottom-forma">
+            <label for="footer-email"
+            class="bottom-forma-label"></label>
+            <input type="email" 
+            name="footer-email"
+            id="footer-email"
+            class="footer-input" 
+            placeholder="E-mail"/>
             <button type="submit" class="forma-button">Subscribe
               <svg
               width="24"
@@ -563,7 +567,7 @@
               <use href="./images/icons.svg#icon-frame"></use>
             </svg>
           </button>
-          </forma>
+          </form>
         </div>
       </div>
     </footer>
@@ -620,9 +624,11 @@
             <label for="comment" class="modal-label">Comment</label>
             <textarea
               name="comment"
+              id="comment"
               placeholder="Text input"
               class="modal-textarea">
             </textarea>
+            </div>
           </div class="modal-container">
           <div class="modal-checkbox">
             <input 

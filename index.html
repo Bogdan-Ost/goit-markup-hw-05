@@ -553,7 +553,15 @@
     </footer>
     <div class="backdrop is-open">
       <div class="modal">
-        <button></button>
+        <button class="modal-close-button" type="button">
+          <svg 
+          height="8"
+          width="8"
+          class="modal-close-icon">
+          <use href="./images/icons.svg#icon-close-black">
+          </use>
+        </svg>
+      </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <form action="">
           <div class="modal-container">
@@ -593,8 +601,13 @@
             ></textarea>
           </div class="modal-container">
           <div class="modal-checkbox">
-            <input type="checkbox" class="modal-input-checkbox visually-hidden" />
-            <label class="modal-checkbox-text">
+            <input 
+            type="checkbox"
+            name="privacy"
+            id="privacy"
+            value="true"
+            class="modal-input-checkbox visually-hidden" />
+            <label class="modal-checkbox-text" for="privacy">
               <span class="modal-checkbox-span">
             <svg width="10" height="8" class="modal-checkbox-svg">
               <use href="./images/icons.svg#icon-Check"></use>

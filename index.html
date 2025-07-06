@@ -66,7 +66,7 @@
       <section class="herobaner">
         <div class="container">
           <h1 class="herobaner-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="herobaner-button">Order Service</button>
+          <button type="button" class="herobaner-button" data-modal-open>Order Service</button>
         </div>
       </section>
 
@@ -549,11 +549,27 @@
             </li>
           </ul>
         </div>
+        <div class="bottom-forma-container">
+          <p class="bottom-social-link-text forma-text">Subscribe</p>
+          <forma class="bottom-forma">
+            <input type="email" name="footer-email"
+            class="footer-input" placeholder="E-mail"/>
+            <label for="footer-email"></label>
+            <button type="submit" class="forma-button">Subscribe
+              <svg
+              width="24"
+              height="24"
+              class="forma-svg">
+              <use href="./images/icons.svg#icon-frame"></use>
+            </svg>
+          </button>
+          </forma>
+        </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button class="modal-close-button" type="button">
+        <button class="modal-close-button" type="button" data-modal-close>
           <svg 
           height="8"
           width="8"
@@ -617,5 +633,6 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

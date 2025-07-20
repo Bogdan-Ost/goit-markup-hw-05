@@ -586,7 +586,7 @@ button:focus {
   transform: translate(-50%, -50%);
 
   border-radius: 4px;
-  width: 408px;
+  max-width: 408px;
   min-height: 584px;
 
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
@@ -598,7 +598,11 @@ button:focus {
   padding: 72px 24px 24px 24px;
 }
 
-.backdrop:not(is-open) .modal {
+.form-container {
+  width: 360px;
+}
+
+.backdrop:not(.is-open) .modal {
   transform: translate(-50%, -50%) scale(1.5);
 }
 
@@ -645,6 +649,7 @@ button:focus {
   text-align: center;
   color: #2e2f42;
   margin-bottom: 16px;
+  width: 360px;
 }
 
 .modal-label {
@@ -660,6 +665,7 @@ button:focus {
 .modal-subcontainer {
   position: relative;
   border: none;
+  width: 360px;
 }
 .modal-subcontainer:focus-within {
   position: relative;
